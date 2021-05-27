@@ -1,0 +1,97 @@
+/* HERO MODULE */
+ .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 74vh;
+  
+  @media (min-width: 576px) {
+    height: 92vh;
+  }
+}
+
+.hero__image {
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width:1090px) {
+    width: 65%;
+  }
+}
+
+
+.hero__image svg {
+  max-width: 100%;
+  height: 100%;
+}
+
+
+/* SVG ANIMATIONS */
+svg > #line-anim {
+  animation: change-line-clr 5s linear infinite alternate;
+}
+
+svg > #small-square {
+  animation: spin-square-left 4s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+svg > #circle-anim {
+  animation: change-clr-1 2.5s linear infinite alternate;
+}
+
+svg > #circle-anim-2 {
+  animation: change-clr-2 2.5s linear infinite alternate;
+}
+
+@keyframes spin-square-left {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes change-clr-1 {
+  0% {
+    fill: #6c63ff;
+  }
+  50% {
+    fill: $orange-clr;
+  }
+  100% {
+    fill: $violet-clr;
+  }
+}
+
+@keyframes change-clr-2 {
+  0% {
+    fill: #6c63ff;
+  }
+  50% {
+    fill: $violet-clr;
+  }
+  100% {
+    fill: $orange-clr
+  }
+}
+
+
+@keyframes change-line-clr {
+  from {
+    fill: #6c63ff;
+  }
+  to {
+    fill: rgb(131, 31, 111);
+  }
+}
+
+

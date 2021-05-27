@@ -1,0 +1,61 @@
+/* SLOGAN MODULE */
+.intro-section {
+  width: 80%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+
+  @media (min-width: 1090px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 5rem;
+  }
+}
+
+.intro-section__title {
+  font-size: 3.2rem;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+
+.intro-section h2 {
+  font-size: 1.6rem;
+  color: #434343;
+  padding-top: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.intro-section p {
+  padding-top: 1.3rem;
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.intro-section__left {
+  @media (min-width: 992px) {
+    flex: 1 1 30%;
+    padding: auto 0;
+  }
+}
+
+.intro-section__right {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+  border-radius: 1rem;
+
+  @media (min-width: 1090px) {
+    flex: 1 1 50%;
+    margin-left: 5em;
+  }
+}
+
+.intro-section__right img {
+  max-width: 100%;
+}

@@ -1,0 +1,125 @@
+/* FORM MODULE */
+.form {
+  width: 80%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+
+  @media (min-width: 1090px) {
+   display: flex; 
+   height: 90vh;
+   overflow: hidden;
+  }
+}
+
+form > * {
+  margin-top: 1rem;
+}
+
+.form label {
+  display: block;
+  font-size: 0.75rem;
+  color: #9e9d9d;
+  font-weight: 700;
+}
+
+.form input {
+  padding: 0.5rem 0.3rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b5b5b5;
+  letter-spacing: 0.09rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $form-text-clr;
+}
+
+.form input:focus {
+  border-bottom-color: #6c279d;
+}
+
+.form__mail input::placeholder {
+  font-size: 0.8rem;
+}
+
+.form__message textarea {
+  width: 100%;
+  height: 2.5rem;
+  font-family: inherit;
+  padding: 0.5rem 0.3rem;
+  border: none;
+  border-bottom: 1px solid #b5b5b5;
+  resize: none;
+  outline: none;
+  letter-spacing: 0.09rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $form-text-clr;
+}
+
+.form__message textarea:focus {
+  border-bottom-color: $form-text-clr;
+}
+
+.form__message textarea::placeholder {
+  font-size: 0.8rem;
+}
+
+.form__message label {
+  color: $icon-clr;
+}
+
+.form p {
+  line-height: 1.5;
+  padding-bottom: 1.6rem;
+  font-weight: 500;
+  color: $icon-clr;
+}
+
+.form p:first-child {
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.submit-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2.5rem 0;
+}
+
+.submit-box button {
+  color: #fff;
+  border: 2px solid $icon-clr;
+  border-radius: 0.3rem;
+  background-color: #3e1f92;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.submit-box button:active {
+  background-color: #330f96;
+  color: rgb(238, 238, 238);
+}
+
+
+.form__box-left {
+  display: none;
+
+  @media (min-width: 1090px) {
+    display: block;
+    flex: 1 1 50%;
+  }
+}
+
+.form__box-right {
+  flex: 1 1 50%;
+}
+
